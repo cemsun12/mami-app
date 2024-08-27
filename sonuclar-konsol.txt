@@ -1,0 +1,20 @@
+Final Grouped Groups:
+Final Group 1:
+    Group with Names = ['SAĞ YAN PANEL', 'SOL YAN PANEL'], Dimensions = [(0.0, 773.0, 485.0), (0.0, 773.0, 485.0)], Group Weight = 8.24791 kg
+    Group with Names = ['SAĞ ARA YAN PANEL', 'SOL ARA YAN PANEL'], Dimensions = [(0.0, 716.0, 445.0), (0.0, 716.0, 445.0)], Group Weight = 7.00964 kg
+    Group with Names = ['ALT PANEL'], Dimensions = [(0.0, 1756.0, 467.0)], Group Weight = 9.020572 kg
+    Group with Names = ['ÜST PANEL'], Dimensions = [(0.0, 1756.0, 391.0)], Group Weight = 7.552556 kg
+    Group with Names = ['RAF', 'RAF'], Dimensions = [(0.0, 491.0, 425.0), (0.0, 491.0, 425.0)], Group Weight = 4.59085 kg
+    Group with Names = ['SAĞ KAPAK', 'SOL KAPAK'], Dimensions = [(0.0, 645.0, 500.0), (0.0, 645.0, 500.0)], Group Weight = 7.095000000000001 kg
+    Group with Names = ['KAYIT'], Dimensions = [(0.0, 1756.0, 64.0)], Group Weight = 1.236224 kg
+    Group with Names = ['KAYIT'], Dimensions = [(0.0, 1756.0, 96.0)], Group Weight = 0.8428800000000001 kg
+    Group with Names = ['BİTMİŞ ÜST PANEL'], Dimensions = [(0.0, 1756.0, 455.0)], Group Weight = 0.0 kg
+    Group with Names = ['ARKALIK', 'ARKALIK'], Dimensions = [(0.0, 726.0, 501.0), (0.0, 726.0, 501.0)], Group Weight = 1.3821588 kg
+    Total Weight of Final Group 1 = 46.977790799999994 kg
+Final Group 2:
+    Group with Names = ['ÇEKMECE KLAPA', 'ÇEKMECE KLAPA', 'ÇEKMECE KLAPA'], Dimensions = [(0.0, 743.0, 213.0), (0.0, 743.0, 213.0), (0.0, 743.0, 213.0)], Group Weight = 5.2225470000000005 kg
+    Group with Names = ['ÇEKMECE SAĞ YAN KASA', 'ÇEKMECE SAĞ YAN KASA', 'ÇEKMECE SAĞ YAN KASA', 'ÇEKMECE SOL YAN KASA', 'ÇEKMECE SOL YAN KASA', 'ÇEKMECE SOL YAN KASA'], Dimensions = [(0.0, 390.0, 120.0), (0.0, 390.0, 120.0), (0.0, 390.0, 120.0), (0.0, 390.0, 120.0), (0.0, 390.0, 120.0), (0.0, 390.0, 120.0)], Group Weight = 3.0888000000000004 kg
+    Group with Names = ['ÇEKMECE ARKA KASA', 'ÇEKMECE ARKA KASA', 'ÇEKMECE ARKA KASA'], Dimensions = [(0.0, 694.0, 120.0), (0.0, 694.0, 120.0), (0.0, 694.0, 120.0)], Group Weight = 2.74824 kg
+    Group with Names = ['ÇEKMECE DİBİ', 'ÇEKMECE DİBİ', 'ÇEKMECE DİBİ'], Dimensions = [(0.0, 705.0, 383.0), (0.0, 705.0, 383.0), (0.0, 705.0, 383.0)], Group Weight = 4.050225 kg
+    Group with Names = ['ARKALIK', 'ARKALIK'], Dimensions = [(0.0, 726.0, 374.0), (0.0, 726.0, 374.0)], Group Weight = 1.0317911999999998 kg
+    Total Weight of Final Group 2 = 16.141603200000002 kg

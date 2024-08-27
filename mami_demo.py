@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 class Box:
-    def __init__(self, name, dimensions, weight, quantity=1.0):
+    def __init__(self, name, dimensions, weight, quantity=1):
         self.name = name
         self.dimensions = dimensions
         self.weight = weight
@@ -12,7 +12,7 @@ class Box:
         return np.allclose(self.dimensions[1:], other_box.dimensions[1:], atol=tolerance)
 
     def __repr__(self):
-        return f"Box(name={self.name}, dimensions={self.dimensions}, weight={self.weight}, quantity={self.quantity})"
+        return f"Box(name={self.name}, dimensions={self.dimensions}, weight={self.weight})"
 
 
 class BoxGrouper:
@@ -84,15 +84,25 @@ def read_boxes_from_excel(file_path):
 
     boxes = []
     for index, row in df.iterrows():
-        name = row['Parça Adı']
-        quantity = row['Adet'] if not pd.isna(row['Adet']) else 0.0
-        dimensions = (row['Kalınlık'], row['Boy'], row['En'])
-        weight = row['Ağırlık']
+        name = row.iloc[4]  # Adjust the index as needed for 'Parça Adı'
 
-        if isinstance(quantity, float):
-            quantity = quantity
-        else:
-            quantity = float(quantity)
+        # Convert quantity to float, skip if not possible
+        try:
+            quantity = float(row.iloc[9]) if not pd.isna(row.iloc[9]) else 0.0  # Adjust the index as needed
+        except ValueError:
+            quantity = 0.0
+
+        # Get dimensions, convert to float, skip if not possible
+        try:
+            dimensions = (float(row.iloc[5]), float(row.iloc[7]), float(row.iloc[8]))  # Adjust these indexes as needed
+        except ValueError:
+            dimensions = (0.0, 0.0, 0.0)
+
+        # Get weight, convert to float, skip if not possible
+        try:
+            weight = float(row.iloc[28]) if not pd.isna(row.iloc[28]) else 0.0  # Column AC, index 28
+        except ValueError:
+            weight = 0.0
 
         boxes.append(Box(name=name, dimensions=dimensions, weight=weight, quantity=quantity))
 
@@ -100,14 +110,12 @@ def read_boxes_from_excel(file_path):
 
 
 # Define the file path to your Excel file
-file_path = 'veriseti-demo.xlsx'
-
-# Load the boxes from the Excel file
+file_path = 'veriseti.xls'
 boxes = read_boxes_from_excel(file_path)
 
 # Set tolerance and weight limits
 tolerance = 5.0
-max_weight = 49.0
+max_weight = 46.0
 
 # Create a BoxGrouper instance
 grouper = BoxGrouper(boxes, tolerance, max_weight)
